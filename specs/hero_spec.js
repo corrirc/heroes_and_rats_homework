@@ -19,4 +19,12 @@ describe("hero test", function(){
     assert.strictEqual(hero1.favorite_food, "kebab");
   })
 
+  it("hero can talk", function(){
+    assert.strictEqual(hero1.talk(), "How yae daeing am John Smeaton");
+  })
+
+  it("hero has tasks to complete", function(){
+    assert.strictEqual(hero1.tasks.length, 0);
+  })
+
 })
